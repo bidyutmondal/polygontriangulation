@@ -38,6 +38,7 @@
     for(var i=1; i < n; ++i){
       poly.lineTo(points[i][0],points[i][1]);
     }
+    poly.lineTo(points[0][0],points[0][1]);
     poly.stroke();
     poly.fill();
 
@@ -187,7 +188,6 @@
       for(var j = 1; j <= 3; ++j) {
         poly_triang.lineTo(triangles[i][j%3][0],triangles[i][j%3][1]);
       }
-      poly.lineTo(points[0][0],points[0][1]);
       poly_triang.stroke();
     }
     //poly_triang.fill();
